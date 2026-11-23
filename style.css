@@ -357,3 +357,23 @@ h2 {
         flex-direction: column;
     }
 }
+
+.lista-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 28px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-links a {
+    color: var(--verde);
+    font-weight: 700;
+    text-underline-offset: 4px;
+}
+
+.lista-links a:hover {
+    color: var(--coral);
+}
