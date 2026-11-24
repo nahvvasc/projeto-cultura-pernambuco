@@ -377,3 +377,85 @@ h2 {
 .lista-links a:hover {
     color: var(--coral);
 }
+
+/* Páginas de festas e tradições */
+
+.banner-tematico {
+    display: flex;
+    align-items: center;
+    background-color: var(--verde-escuro);
+}
+
+.tabela-responsiva {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.tabela-cultura {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--branco);
+}
+
+.tabela-cultura th,
+.tabela-cultura td {
+    padding: 15px;
+    border: 1px solid #e8e2d4;
+    text-align: left;
+}
+
+.tabela-cultura th {
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+.tabela-cultura tbody tr:nth-child(even) {
+    background-color: #f4f0e5;
+}
+
+.titulo-lista {
+    margin-top: 35px;
+    color: var(--verde-escuro);
+}
+
+.lista-cultura {
+    padding-left: 25px;
+    color: var(--texto-suave);
+}
+
+.lista-cultura li {
+    margin-bottom: 12px;
+}
+
+.imagem-destaque {
+    margin: 35px 0 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--branco);
+}
+
+.imagem-destaque img {
+    display: block;
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+}
+
+.imagem-destaque figcaption {
+    padding: 12px;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.botao-link {
+    margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+    .tabela-cultura th,
+    .tabela-cultura td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
