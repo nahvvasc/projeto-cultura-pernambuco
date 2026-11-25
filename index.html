@@ -14,8 +14,9 @@
             <nav aria-label="Navegação principal">
                 <ul class="menu">
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre o projeto</a></li>
-                    <li><a href="#assuntos">Assuntos</a></li>
+                    <li><a href="festas.html">Festas</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -88,52 +89,65 @@
                 </div>
             </div>
         </section>
-        <section class="secao links-externos">
-    <div class="container texto-centralizado">
-        <p class="etiqueta">Saiba mais</p>
-        <h2>Conheça mais sobre Pernambuco</h2>
-        <p class="descricao">
-            Explore outros espaços que ajudam a preservar e divulgar a cultura pernambucana.
-        </p>
 
-        <ul class="lista-links">
-            <li>
-                <a href="https://www.cultura.pe.gov.br/" target="_blank" rel="noopener noreferrer">
-                    Secretaria de Cultura de Pernambuco
-                </a>
-            </li>
-            <li>
-                <a href="https://www.olinda.pe.gov.br/" target="_blank" rel="noopener noreferrer">
-                    Prefeitura de Olinda
-                </a>
-            </li>
-            <li>
-                <a href="https://www.gov.br/iphan/pt-br" target="_blank" rel="noopener noreferrer">
-                    Instituto do Patrimônio Histórico e Artístico Nacional
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
-    </main>
+        <section class="secao" id="contato">
+            <div class="container">
+                <div class="texto-centralizado">
+                    <p class="etiqueta">Fale conosco</p>
+                    <h2>Envie sua mensagem pelo WhatsApp</h2>
+                    <p class="descricao">
+                        Tem alguma dúvida, sugestão ou história sobre a cultura pernambucana? Preencha o formulário abaixo.
+                    </p>
+                </div>
 
-    <footer class="rodape">
-        <div class="container rodape-conteudo">
-            <a class="logo" href="#inicio">Encantos de Pernambuco</a>
-            <p>Celebrando a cultura e os sabores pernambucanos.</p>
-            <p class="credito">© 2026 Encantos de Pernambuco</p>
-        </div>
-    </footer>
+                <form class="formulario-contato" id="form-whatsapp" onsubmit="enviarWhatsApp(event)">
+                    <div class="campo-form">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
 
-<a href="https://wa.me/5581985506668"
-   class="whatsapp-flutuante"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="Fale conosco pelo WhatsApp">
-    WhatsApp
-</a>
+                    <div class="campo-form">
+                        <label for="assunto-contato">Assunto de interesse</label>
+                        <select id="assunto-contato" name="assunto">
+                            <option value="Festas e Tradições">Festas e Tradições</option>
+                            <option value="Frevo">Frevo</option>
+                            <option value="Gastronomia">Gastronomia</option>
+                            <option value="Bolo de Rolo">Bolo de Rolo</option>
+                            <option value="Outro">Outro assunto</option>
+                        </select>
+                    </div>
 
-<script src="script.js"></script>
+                    <div class="campo-form">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
 
-</body>
-</html>
+                    <button type="submit" class="botao-enviar">Enviar pelo WhatsApp</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="secao assuntos links-externos">
+            <div class="container texto-centralizado">
+                <p class="etiqueta">Saiba mais</p>
+                <h2>Conheça mais sobre Pernambuco</h2>
+                <p class="descricao">
+                    Explore outros espaços que ajudam a preservar e divulgar a cultura pernambucana.
+                </p>
+
+                <ul class="lista-links">
+                    <li>
+                        <a href="https://www.cultura.pe.gov.br/" target="_blank" rel="noopener noreferrer">
+                            Secretaria de Cultura de Pernambuco
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.olinda.pe.gov.br/" target="_blank" rel="noopener noreferrer">
+                            Prefeitura de Olinda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.gov.br/iphan/pt-br" target="_blank" rel="noopener noreferrer">
+                            Instituto do Patrimônio Histórico e Artístico Nacional
+                        </a>
+                    </li>
